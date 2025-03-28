@@ -1,0 +1,14 @@
+% Funcionalidades do Sistema
+    - Controle de Estoque: Cadastrar, editar e remover produtos e visualizar quantidades.
+        x Iniciar projeto
+        x Criar um formulário para adicionar novos produtos.
+        x Implementar remoção de produtos.
+        x Criar funcionalidade de busca de produtos.
+        ~ Adicionar um dashboard com estatísticas do estoque.
+
+        ~ Lista de Produtos Baseado no que já tem cadastrado para otimizar cadastramento
+
+    - Gestão Financeira: Registrar entradas e saídas de dinheiro, gerar relatórios financeiros.
+
+    - Gestão de Clientes: Cadastro de clientes, emissão de boletos e notas fiscais.
+
