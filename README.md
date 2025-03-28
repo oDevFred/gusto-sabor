@@ -9,7 +9,7 @@
 <h1 align="center">Gusto Sabor</h1>
 
 <p align="center">
-  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/python/top/oDevFred/gusto-sabor?color=56BEB8">
+  <img alt="Principal linguagem do projeto" src="https://skillicons.dev/icons?i=python,html,bootstrap,flask">
   <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/oDevFred/gusto-sabor?color=56BEB8">
   <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/oDevFred/gusto-sabor?color=56BEB8">
   <img alt="Licença" src="https://img.shields.io/github/license/oDevFred/gusto-sabor?color=56BEB8">
