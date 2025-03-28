@@ -18,8 +18,6 @@
   <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/oDevFred/gusto-sabor?color=56BEB8" /> -->
 </p>
 
- Status
-
 <h4 align="center"> 
 	🚧  Gusto Sabor 🚀 Em construção...  🚧
 </h4> 
