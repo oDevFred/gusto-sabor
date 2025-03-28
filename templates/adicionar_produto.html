@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Adicionar Novo Produto</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="mb-3">
+            {{ form.nome.label(class="form-label") }}
+            {{ form.nome(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.quantidade.label(class="form-label") }}
+            {{ form.quantidade(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.preco.label(class="form-label") }}
+            <div class="input-group">
+                <span class="input-group-text">R$</span>
+                {{ form.preco(class="form-control", id="preco") }}
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Adicionar</button>
+    </form>
+{% endblock %}
+
