@@ -13,6 +13,10 @@
         </thead>
         <tbody>
             {% for produto in produtos %}
+            <form method="GET" action="{{ url_for('lista_produtos') }}" class="mb-3">
+                <input type="text" name="q" class="form-control" placeholder="Buscar produto..." value="{{ query or '' }}">
+                <button type="submit" class="btn btn-primary mt-2">Buscar</button>
+            </form>            
             <tr>
                 <td>{{ produto.nome }}</td>
                 <td>{{ produto.quantidade }}</td>

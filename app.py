@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_bootstrap import Bootstrap
 from forms import ProdutoForm
@@ -59,10 +59,16 @@ def remover_produto(id):
     flash('Produto removido com sucesso!', 'danger')
     return redirect(url_for('lista_produtos'))
 
-@app.route('/produtos')
+@app.route('/produtos', methods=['GET'])
 def lista_produtos():
-    produtos = Produto.query.all()
-    return render_template('produtos.html', produtos=produtos)
+    query = request.args.get('q')  # Obtém o termo de busca
+    if query:
+        produtos = Produto.query.filter(Produto.nome.ilike(f'%{query}%')).all()
+    else:
+        produtos = Produto.query.all()
+    
+    return render_template('produtos.html', produtos=produtos, query=query)
+
 
 
 @app.template_filter('moeda')
