@@ -9,7 +9,7 @@
 <h1 align="center">Gusto Sabor</h1>
 
 <p align="center">
-  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/oDevFred/gusto-sabor?color=56BEB8">
+  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/python/top/oDevFred/gusto-sabor?color=56BEB8">
   <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/oDevFred/gusto-sabor?color=56BEB8">
   <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/oDevFred/gusto-sabor?color=56BEB8">
   <img alt="Licença" src="https://img.shields.io/github/license/oDevFred/gusto-sabor?color=56BEB8">
@@ -18,13 +18,13 @@
   <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/oDevFred/gusto-sabor?color=56BEB8" /> -->
 </p>
 
-<!-- Status -->
+ Status
 
-<!-- <h4 align="center"> 
+<h4 align="center"> 
 	🚧  Gusto Sabor 🚀 Em construção...  🚧
 </h4> 
 
-<hr> -->
+<hr> 
 
 <p align="center">
   <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
@@ -40,27 +40,27 @@
 
 ## :dart: Sobre ##
 
-Sobre o seu projeto
+Um sistema de gestão de estoque, financeiro e cliente da empresa de temperos Gusto Sabor.
 
 ## :sparkles: Funcionalidades ##
 
-:heavy_check_mark: Funcionalidade 1;\
-:heavy_check_mark: Funcionalidade 2;\
-:heavy_check_mark: Funcionalidade 3;
+:heavy_check_mark: Controle de Estoque: Cadastrar, editar e remover produtos e visualizar quantidades.\
+:heavy_check_mark: Gestão Financeira: Registrar entradas e saídas de dinheiro, gerar relatórios financeiros.\
+:heavy_check_mark: Gestão de Clientes: Cadastro de clientes, emissão de boletos e notas fiscais.\
+:heavy_check_mark: Interface Responsiva: Usaremos Bootstrap para facilitar a estilização.
 
 ## :rocket: Tecnologias ##
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- Backend: [Flask](https://flask.palletsprojects.com/en/stable/)([Python](https://www.python.org/))
+- Banco de Dados: [SQLite](https://www.sqlite.org/) (para simplicidade)
+- Frontend: [Bootstrap 5](https://getbootstrap.com/) + [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)/[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- Ambiente Virtual: [venv](https://dev.to/franciscojdsjr/guia-completo-para-usar-o-virtual-environment-venv-no-python-57bo) para gerenciamento de dependências
 
 ## :white_check_mark: Pré requisitos ##
 
-Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.com) e o [Node](https://nodejs.org/en/) instalados em sua maquina.
+Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.com) e o [Python](https://www.python.org/) instalados em sua maquina.
 
 ## :checkered_flag: Começando ##
 
@@ -71,13 +71,20 @@ $ git clone https://github.com/oDevFred/gusto-sabor
 # Entre na pasta
 $ cd gusto-sabor
 
+# Criar ambiente virtual
+$ python -m venv venv
+# Ativar no Linux/Mac
+$ source venv/bin/activate 
+# Ativar no Windows
+$ venv\Scripts\activate
+
 # Instale as dependências
-$ yarn
+$ pip install flask flask_sqlalchemy flask_bootstrap
 
 # Para iniciar o projeto
-$ yarn start
+$ python app.py
 
-# O app vai inicializar em <http://localhost:3000>
+# O app vai inicializar em <http://127.0.0.1:5000/>
 ```
 
 ## :memo: Licença ##
